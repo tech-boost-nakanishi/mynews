@@ -27,7 +27,7 @@ Route::group(['prefix' => 'admin'], function() {
     「http://XXXXXX.jp/XXX というアクセスが来たときに、
     AAAControllerのbbbというAction に渡すRoutingの設定」を書いてみてください。
 */
-Route::get('XXX', 'AAAController@bbb');
+// Route::get('XXX', 'AAAController@bbb');
 
 
 /*
@@ -39,18 +39,6 @@ Route::get('XXX', 'AAAController@bbb');
 //   Route::get('profile/create', 'ProfileController@add');
 //   Route::get('profile/edit', 'ProfileController@edit');
 // });
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
