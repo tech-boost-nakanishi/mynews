@@ -129,8 +129,8 @@ return [
     */
 
     'custom' => [
-        'attribute-name' => [
-            'rule-name' => 'custom-message',
+        'gender' => [
+            'required' => '性別を選択してください。',
         ],
     ],
 
@@ -149,7 +149,6 @@ return [
         'title' => 'タイトル',
         'body' => '本文',
         'name' => '名前',
-        'gender' => '性別',
         'hobby' => '趣味',
         'introduction' => '自己紹介'
     ],
