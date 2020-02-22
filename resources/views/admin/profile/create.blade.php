@@ -1,5 +1,5 @@
-{{-- layouts/admin.blade.phpを読み込む --}}
-@extends('layouts.admin')
+{{-- layouts/profile.blade.phpを読み込む --}}
+@extends('layouts.profile')
 @section('title', 'プロフィールの新規作成')
 
 @section('content')
