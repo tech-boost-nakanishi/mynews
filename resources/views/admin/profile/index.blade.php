@@ -48,9 +48,11 @@
                                     <td>{{ $profile->hobby }}</td>
                                     <td>{{ \Str::limit($profile->introduction, 250) }}</td>
                                     <td>
-                                        <div>
-                                            <a href="{{ action('Admin\ProfileController@edit', ['id' => $profile->id]) }}">編集</a>
-                                        </div>
+                                        @if($profile->name == Auth::user()->name)
+                                            <div>
+                                                <a href="{{ action('Admin\ProfileController@edit', ['id' => $profile->id]) }}">編集</a>
+                                            </div>
+                                        @endif
                                     </td>
                                 </tr>
                             @endforeach
